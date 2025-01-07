@@ -19,11 +19,13 @@ T = TypeVar("T")
 
 
 @overload
-def loads(data: str, *args, target_type: Type[T], **kwargs) -> T: ...
+def loads(data: str, *args, target_type: Type[T], **kwargs) -> T:
+    ...
 
 
 @overload
-def loads(data: str, *args, **kwargs) -> Any: ...
+def loads(data: str, *args, **kwargs) -> Any:
+    ...
 
 
 def loads(data: str, *args, target_type: Type[T] | None = None, **kwargs) -> Any:
