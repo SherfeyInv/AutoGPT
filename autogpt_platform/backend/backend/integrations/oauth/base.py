@@ -16,7 +16,8 @@ class BaseOAuthHandler(ABC):
 
     @abstractmethod
     # --8<-- [start:BaseOAuthHandler2]
-    def __init__(self, client_id: str, client_secret: str, redirect_uri: str): ...
+    def __init__(self, client_id: str, client_secret: str, redirect_uri: str):
+        ...
 
     # --8<-- [end:BaseOAuthHandler2]
 

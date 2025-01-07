@@ -16,9 +16,9 @@ async def override_auth_middleware(request: fastapi.Request):
     return {"sub": "3e53486c-cf57-477e-ba2a-cb02dc828e1a", "role": "admin"}
 
 
-market.app.app.dependency_overrides[autogpt_libs.auth.middleware.auth_middleware] = (
-    override_auth_middleware
-)
+market.app.app.dependency_overrides[
+    autogpt_libs.auth.middleware.auth_middleware
+] = override_auth_middleware
 
 
 def test_get_submissions():
