@@ -179,7 +179,9 @@ class AIVideoGeneratorBlock(Block):
                 else:
                     logger.info(f"[FAL Generation] Status: Unknown status: {status}")
 
-                wait_time = min(base_wait_time * (2**attempt), 60)  # Cap at 60 seconds
+                wait_time = min(
+                    base_wait_time * (2**attempt), 60
+                )  # Cap at 60 seconds
                 time.sleep(wait_time)
                 attempt += 1
 

@@ -125,7 +125,8 @@ class BaseWebhooksManager(ABC, Generic[WT]):
     @abstractmethod
     async def _deregister_webhook(
         self, webhook: integrations.Webhook, credentials: Credentials
-    ) -> None: ...
+    ) -> None:
+        ...
 
     # --8<-- [end:BaseWebhooksManager4]
 
