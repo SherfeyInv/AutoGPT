@@ -7,7 +7,7 @@
   "description": "A test graph",
   "forked_from_id": null,
   "forked_from_version": null,
-  "has_webhook_trigger": false,
+  "has_external_trigger": false,
   "id": "graph-123",
   "input_schema": {
     "properties": {},
@@ -23,7 +23,9 @@
     "required": [],
     "type": "object"
   },
+  "recommended_schedule_cron": null,
   "sub_graphs": [],
+  "trigger_setup_info": null,
   "user_id": "test-user-id",
   "version": 1
 }
